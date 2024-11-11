@@ -1,0 +1,12 @@
+@font-face {
+  font-family: Grotesk-bold;
+  src: url(../font/akzidenzgroteskpro_boldex.otf);
+}
+@font-face {
+  font-family: Grotesk-medium;
+  src: url(../font/akzidenzgroteskpro_mdex.ttf);
+}
+@font-face {
+  font-family: Grotesk-regular;
+  src: url(../font/akzidenzgroteskpro_ext.otf);
+}

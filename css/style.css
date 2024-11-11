@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-color: #252422;
+  --text-color: #fffcf2;
+  --contrast: #eb5e28;
+}
+html {
+  background-color: var(--bg-color);
+}
+body {
+  font-family: Grotesk-regular, sans-serif;
+  color: var(--text-color);
+}
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  width: 100vw;
+  height: 50px;
+  background-color: #403d392b;
+  position: fixed;
+  top: 0;
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+.link {
+  color: var(--text-color);
+  transition: all 0.3s;
+}
+.link:hover {
+  color: var(--contrast);
+}
+section {
+  width: 100vw;
+}
+.hero-preview {
+  object-fit: cover;
+  width: 100vw;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+}
+h1 {
+  font-family: Grotesk-bold;
+}
+.hero-text {
+  margin-top: 15vw;
+  font-size: 40px;
+  text-align: center;
+  line-height: 70px;
+}
+.hero-text > span {
+  color: var(--contrast);
+}
+.new-films {
+  margin-top: 20vw;
+  padding: 0px 50px;
+}
+.films {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.container {
+  background-color: var(--text-color);
+  width: 350px;
+  border-radius: 16px;
+  margin-top: 50px;
+  position: relative;
+}
+.film-image {
+  object-fit: cover;
+
+  border-radius: 16px 16px 0px 0px;
+}
+.film-desc {
+  padding: 20px;
+}
+.film-name {
+  color: var(--bg-color);
+  margin-bottom: 30px;
+}
+.rating {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  background-color: var(--contrast);
+  padding: 5px 10px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
